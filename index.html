@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100"
+    >
+      <!-- Fixed Main Title -->
+      <h1 id="main-title" class="text-center">Simon Game</h1>
+      <!-- Changing Heading -->
+      <h2 id="game-heading" class="text-center mb-4">Press any key to start</h2>
+      <!-- Simon Game Grid -->
+      <div class="simon-grid">
+        <div id="green" class="box green"></div>
+        <div id="red" class="box red"></div>
+        <div id="yellow" class="box yellow"></div>
+        <div id="blue" class="box blue"></div>
+      </div>
+    </div>
+    <div id="popup" class="popup">Wrong Guess! Try Again.</div>
+    <audio id="sound-green" src="sounds/green.mp3"></audio>
+    <audio id="sound-red" src="sounds/red.mp3"></audio>
+    <audio id="sound-yellow" src="sounds/yellow.mp3"></audio>
+    <audio id="sound-blue" src="sounds/blue.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
